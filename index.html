@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>南乐县电商大数据</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="home">
+        <div class="nav-top">
+            <!-- <div class="navBg"> -->
+            <span class="nav-top-title">南乐县电商大数据</span>
+            <!-- </div> -->
+        </div>
+        <div class="Container">
+            <div class="row">
+                <div class="col-md-4 leftContainer hotSaleContainerColMd">
+                    <div class="hotSaleContainer">
+                        <div class="volumeRowCol GMVChart">
+                            <div id="GMVChart" class="speed-container">
+                            </div>
+                        </div>
+                        <div class="volumeRowCol sumLineCharts">
+                            <div class="textContainer">
+                                <span class="dot"></span> 县域电商企业交易走势
+                            </div>
+                            <div class="iconCharts">
+                                <div id="sumLineCharts" style="width: 100%;height: 100%"></div>
+                            </div>
+                        </div>
+                        <div class="volumeRowCol logistics">
+                            <div class="textContainer">
+                                <span class="dot"></span> 物流数据
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <div id="logisticsData" class="speed-container">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 logisticsDataDiv">
+                                    <div class="borderDiv">
+                                        <p class="title">
+                                            2018年物流总单数
+                                        </p>
+                                        <p class="text red">
+                                            1565955221单
+                                        </p>
+                                    </div>
+                                    <div class="borderDiv">
+                                        <p class="title">
+                                            2018年物流总单数
+                                        </p>
+                                        <p class="text yellow">
+                                            56993单
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 middleContainer">
+                    <div class="row volumeContainer">
+                        <div class="col-md-4 col-lg-4 rowCol">
+                            <p class="textData orderVolume">1000,26</p>
+                            <p class="title">当前累计实时订单数量</p>
+                        </div>
+                        <div class="col-md-4 col-lg-4 rowCol">
+                            <p class="textData GMV">1000,26</p>
+                            <p class="title">当前累计实时交易总额</p>
+                        </div>
+                        <div class="col-md-4 col-lg-4 rowCol">
+                            <p class="textData branchVolume">1000,26</p>
+                            <p class="title">县域电商网点建设数量</p>
+                        </div>
+                    </div>
+                    <div class="chinaSite">
+                        <div id="chinaSiteChart" style="width: 100%;height: 100%"></div>
+                        <div class="siteDataContainer">
+                            <div class="siteDataItem">
+                                <p class="text">
+                                    5689
+                                </p>
+                                <p class="title">
+                                    贫困人数
+                                </p>
+                            </div>
+                            <div class="siteDataItem">
+                                <p class="text">
+                                    2.39万
+                                </p>
+                                <p class="title">
+                                    县域乡域总数
+                                </p>
+                            </div>
+                            <div class="siteDataItem">
+                                <p class="text">
+                                    52.39万
+                                </p>
+                                <p class="title">
+                                    常住人口
+                                </p>
+                            </div>
+                            <div class="siteDataItem">
+                                <p class="text">
+                                    12
+                                </p>
+                                <p class="title">
+                                    行政村数量
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="volumeRowCol povertyCol">
+                        <div class="textContainer">
+                            <span class="dot"></span> 电商扶贫
+                        </div>
+                        <div class="iconCharts">
+                            <div id="povertyHisChart" style="width: 100%;height: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="row doughnut">
+                        <div class="volumeRowCol  col-lg-6">
+                            <div class="textContainer">
+                                <p class="textData">
+                                    <span class="dot"></span>县域分月网络零售额及环比</p>
+                            </div>
+                            <div class="iconCharts">
+                                <div id="networkRetailRingChart" style="width: 100%;height: 100%"></div>
+                            </div>
+                        </div>
+                        <div class="volumeRowCol  col-lg-6">
+                            <div class="textContainer">
+                                <span class="dot"></span> 县域电商行业分月环比
+                            </div>
+                            <div class="iconCharts turnoverRingEc">
+                                <div id="EcRingChart" style="width: 100%;height: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 rightContainer">
+                    <div class="turnoverHisContainer">
+                        <div class="volumeRowCol">
+                            <div id="qybxspm" class="speed-container">
+                            </div>
+                        </div>
+                        <div class="volumeRowCol">
+                            <div id="qybxspms" class="speed-container">
+                            </div>
+                        </div>
+                        <div class="row internetConsume">
+                            <p> <span class="dot"></span> 县域乡镇交易排行榜</p>
+                            <div class="volumeRowCol col-lg-5">
+                                <div class="textContainer">
+                                    乡镇交易额排名
+                                </div>
+                                <div class="iconCharts ">
+                                    <div id="internetConsume1" style="width: 100%;height: 100%"></div>
+                                </div>
+                            </div>
+                            <div class="volumeRowCol col-lg-7">
+                                <div class="textContainer">
+                                     乡镇电商交易额排名
+                                </div>
+                                <div class="iconCharts">
+                                    <div id="internetConsume2" style="width: 100%;height: 100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row crowd">
+                            <div class="volumeRowCol  col-lg-6">
+                                <div class="textContainer">
+                                    <span class="dot"></span> 消费人群各个年龄段占比
+                                </div>
+                                <div class="iconCharts turnoverRingEc">
+                                    <div id="consumeCrowdChart" style="width: 100%;height: 100%"></div>
+                                </div>
+                            </div>
+                            <div class="volumeRowCol  col-lg-6">
+                                <div class="textContainer">
+                                    <p class="crowdP">
+                                        县域总人口：<b class="yellow">52390000</b>
+                                    </p>
+                                    <p class="crowdP">
+                                        互联网从业人数：
+                                        <b class="blue">560000</b>
+                                    </p>
+                                </div>
+                                <div class="iconCharts  internetCharts">
+                                    <div id="crowdChart" style="width: 100%;height: 100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+    <script src="js/data.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/echarts.min.js"></script>
+    <script type="text/javascript" src="js/createSpeed.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

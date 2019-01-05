@@ -1,0 +1,132 @@
+/* 头部 */
+
+.tablePage,body{
+    background: #222629;
+}
+.nav-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 69px;
+    width: 100%;
+    background-color: #2B2E37;
+    text-align: center;
+    z-index: 999;
+    background-image: url(../img/headBg.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+
+.nav-top-title {
+    line-height: 69px;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+    font-weight: 400;
+    letter-spacing: 12px;
+    text-align: center;
+}
+#app{
+    margin-top: 79px;
+}
+.searchCondition{
+    height: 70px;
+    display: flex;
+     justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 10px;
+    background: #30373D;
+}
+.el-date-editor .el-range-separator{
+    width:8%;                                                             
+}                                
+.searchLeft{
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    font-size: 18px;
+    justify-content: flex-start;
+    color:#fff;
+}
+.timeDiv{
+    margin-left: 100px;
+}
+.sort{
+    margin-left: 50px;
+}
+.searchRight{
+    width: 20%;
+    padding-right: 100px;
+}
+
+.el-input__prefix{
+    left:10px;
+}
+.el-input--prefix .el-input__inner{
+    border-radius:20px;
+    padding-left: 50px;
+}
+/* 表格 */
+.tableContainer{
+    margin: 10px 10px;
+    height: 874px;
+}
+.el-table{
+    height: 800px;
+}
+.tableContainer,.el-table, .el-table__expanded-cell,.el-table th, .el-table tr{
+    background: #30373D;
+}
+.el-table{
+    color: #fff;
+    font-size: 16px;
+    padding: 0 60px;
+}
+.el-table thead{
+    color: #FBD710;
+}
+.el-table td, .el-table th.is-leaf{
+      border-bottom-color: #24292E;
+      text-align: center;
+}
+.el-table--border::after, .el-table--group::after, .el-table::before{
+      background: transparent;
+      
+}
+.el-table--enable-row-hover .el-table__body tr:hover>td{
+     background: #24292E;
+}
+.el-table>.cell{
+    text-align: center;
+}
+.el-table tr .el-table_1_column_1,.el-table th .el-table_1_column_1{
+      text-align: left;
+    padding-left: 35px;
+}
+/* 页码 */
+.el-pagination{
+    float: right;
+    margin-right: 100px;
+    color: #fff;
+    font-size: 16px;
+}
+.el-pager li{
+    font-size: 16px;
+}
+.el-pagination button:disabled,.el-dialog, .el-pager li,.el-pagination .btn-next, .el-pagination .btn-prev{
+    color: #fff;
+    background: transparent;
+    font-size: 16px;
+}
+.el-pagination button:disabled{
+    color: #838B90
+}
+.el-pager li.active,.el-pager li:hover{
+    color: #FBD710;
+}
+.el-pager li.btn-quicknext, .el-pager li.btn-quickprev{
+    color: #fff;
+}

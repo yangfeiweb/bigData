@@ -1,0 +1,663 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'MicrosoftYaHei', 'Arial', sans-serif;
+    font-size: 12px;
+}
+
+ul,
+li,
+img {
+    padding: 0;
+    margin: 0;
+}
+
+.home {
+    height: auto;
+    width: 100%;
+    position: relative;
+    background: #222629;
+    /* padding-bottom: 101px; */
+    /* padding-bottom: 20px; */
+}
+
+
+/* 头部 */
+
+.nav-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 69px;
+    width: 100%;
+    background-color: #2B2E37;
+    text-align: center;
+    z-index: 999;
+    background-image: url(../img/headBg.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+
+.nav-top-title {
+    line-height: 69px;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+    font-weight: 400;
+    letter-spacing: 12px;
+    text-align: center;
+}
+
+.Container {
+    width: 100%;
+    height: 100%;
+    padding-top: 69px;
+    background-color: #222629;
+}
+
+.row {
+    margin: 0;
+}
+
+.leftContainer,
+.rightContainer {
+    width: 28%;
+}
+
+.middleContainer {
+    width: 44%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+/* 磨角的柱状图 */
+
+.speed-container {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.speed-container .speed-title {
+    overflow: hidden;
+    line-height: 30px;
+}
+
+.speed-container .speed-title span {
+    /* display: block;
+    float: left; */
+    color: #ffffff;
+    padding-right: 10px;
+    font-size: 18px;
+}
+
+.speed-content {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.speed-content ul {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.speed-content ul li {
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    font-size: 18px;
+    height: 33px;
+    line-height: 27px;
+}
+
+
+/* 左边  */
+
+
+/* 电商企业交易额 */
+
+.hotSaleContainer div.GMVChart {
+    height: 282px;
+}
+
+.GMVChart .speed-content ul li span:nth-child(1) {
+    width: 100%;
+    padding-left: 50px;
+    text-align: left;
+    font-size: 16px;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+.GMVChart .speed-content ul li .speed-line {
+    /* width: 40%; */
+}
+
+.GMVChart .speed-content ul li span:nth-child(2) {
+    display: block;
+    /*height: 20px;*/
+    float: left;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    /*line-height: 20px;*/
+}
+
+
+/* 电商走势图 */
+
+
+/* 电商交易额的折线走势图 */
+
+.hotSaleContainer div.sumLineCharts {
+    height: 388px;
+}
+
+.hotSaleContainer .sumLineCharts .iconCharts {
+    height: 100%;
+    width: 100%;
+    margin-top: -5%;
+}
+
+
+/* 环比 */
+
+.middleContainer div.doughnut {
+    height: 260px;
+    background: #303741;
+    color: #fff;
+    font-size: 18px;
+    padding: 20px 0 10px;
+}
+
+.middleContainer div.doughnut .textData {
+    margin: 0;
+}
+
+.middleContainer div.doughnut .volumeRowCol {
+    height: 100%;
+}
+
+.middleContainer div.doughnut .iconCharts {
+    margin-top: 10px;
+    height: 85%;
+}
+
+.doughnut .turnoverRingEc {
+    margin-top: 10px;
+}
+
+.speed-content ul li span:nth-child(1) {
+    display: block;
+    color: #fff;
+    width: 16%;
+    /*height: 20px;*/
+    float: left;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    /*line-height: 20px;*/
+    margin-right: 20px;
+}
+
+.speed-content ul li span:nth-child(2) {
+    display: block;
+    /*height: 20px;*/
+    float: left;
+    padding: 0;
+    margin: 0;
+    color: #57AB93;
+    /*line-height: 20px;*/
+}
+
+.speed-line {
+    width: 60%;
+    background-color: #292B37;
+    height: 13px;
+    margin-top: 8px!important;
+    border-radius: 5px;
+    position: relative;
+}
+
+.speed-num {
+    /*width: 90%;*/
+    display: block;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.numText {
+    /* position: absolute;
+    top: -9px;
+    right: 4px; */
+    float: left;
+    margin-left: 10px;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.hotSaleContainer .volumeRowCol {
+    margin-top: 10px;
+    background: #303741;
+    padding: 20px;
+    height: 400px;
+}
+
+.hotSaleContainer .logistics {
+    padding: 20px;
+    height: 310px;
+}
+
+.speed-container .speed-title span {}
+
+.hotSaleContainer .volumeRowCol .iconCharts {
+    width: 100%;
+}
+
+.hotSaleContainer .textContainer {
+    text-align: left;
+    font-size: 18px;
+    color: #fff;
+}
+
+
+/* 中间三个数据模块 */
+
+.volumeContainer {
+    margin: 0;
+    margin-top: 10px;
+    height: 80px;
+    background: #303741;
+}
+
+.volumeContainer .rowCol {
+    height: 50%;
+    padding: 0;
+    margin: 2.5% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.volumeContainer .rowCol .textData {
+    font-size: 18px;
+    color: #FBD710;
+    margin: 0;
+}
+
+.volumeContainer .rowCol .title {
+    color: #fff;
+    font-size: 16px;
+}
+
+.rowCol:nth-child(2) {
+    border-left: 2px solid #3D444E;
+    border-right: 2px solid #3D444E;
+}
+
+
+/*地图 */
+
+.chinaSite {
+    margin-top: 9px;
+    height: 369px;
+    position: relative;
+}
+
+.siteDataContainer {
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    height: 369px;
+    width: 200px;
+    /* background: #57AB93; */
+}
+
+.siteDataItem {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    background-image: url(../img/border.png);
+    background-size: 100% 100%;
+    height: 67px;
+    width: 128px;
+}
+
+.siteDataItem:nth-child(2) {
+    top: 90px;
+}
+
+.siteDataItem:nth-child(3) {
+    top: 172px;
+}
+
+.siteDataItem:nth-child(4) {
+    top: 255px;
+}
+
+.siteDataItem p {
+    font-size: 18px;
+    height: 30px;
+    line-height: 22px;
+    text-align: center;
+    margin: 0;
+}
+
+.siteDataItem .text {
+    color: #388EEC;
+    margin-top: 8px;
+}
+
+.siteDataItem .title {
+    color: #fff;
+    font-size: 16px;
+}
+
+.povertyHis {
+    padding: 20px;
+    height: 339px;
+    background-color: #303741;
+    margin-top: 10px;
+}
+
+.povertyHis .speed-content ul li span:nth-child(1) {
+    width: 180px;
+    display: inline-block;
+    float: left;
+}
+
+.povertyHis .speed-content ul li span:nth-child(2) {
+    display: inline-block;
+}
+
+.iconCharts {
+    width: 90%;
+    height: 70%;
+}
+
+.turnoverHisContainer {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.turnoverHisContainer .volumeRowCol:nth-child(2) {
+    margin: 10px 0;
+}
+
+.turnoverHisContainer .volumeRowCol .speed-content {
+    margin-top: -10px;
+}
+
+.turnoverHisContainer .volumeRowCol {
+    height: 240px;
+    background: #303741;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.turnoverHisContainer .textContainer {
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+}
+
+.turnoverHisContainer .iconCharts {
+    width: 90%;
+    height: 80%;
+}
+
+.turnoverHisContainer .turnoverRingEc {
+    width: 100%;
+}
+
+.internetConsume .textContainer {
+    margin-bottom: -60px;
+}
+
+div.internetConsume {
+    background: #303741;
+    color: #fff;
+    font-size: 18px;
+}
+
+div.internetConsume .iconCharts {
+    height: 240px;
+    width: 80%;
+}
+
+div.internetConsume {
+    height: 210px;
+}
+
+.internetConsume div.volumeRowCol {
+    padding: 0;
+}
+
+div.internetConsume .volumeRowCol:nth-child(2) {
+    margin: 0;
+}
+
+.crowd {
+    margin: 76px 0 0px;
+}
+
+.crowd .crowdP {
+    font-size: 12px;
+    color: #fff;
+    margin: 0;
+}
+
+.crowdP b {
+    font-weight: normal;
+}
+
+.crowd .crowdP .yellow {
+    color: #DCDCDC;
+}
+
+.crowd .crowdP .blue {
+    color: #13B5B1;
+}
+
+div.crowd .volumeRowCol:nth-child(2) {
+    margin: 0;
+    padding: 10px 0px;
+}
+
+.crowd .volumeRowCol {
+    height: 215px;
+    padding: 10px 5px;
+}
+
+.crowd .volumeRowCol .textContainer {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.crowd div.internetCharts {
+    height: 80%;
+    margin-top: 0px;
+}
+
+.crowd .iconCharts {
+    margin-top: 15px;
+    height: 80%;
+}
+
+.internetConsume p {
+    margin: 10px;
+    margin-bottom: 0px;
+}
+
+
+/*物流 */
+
+.borderDiv {
+    width: 132px;
+    height: 66px;
+    border: 1px solid rgba(131, 131, 131, 1);
+}
+
+.borderDiv p {
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+
+.borderDiv p.yellow {
+    color: #CFC521;
+}
+
+.borderDiv p.red {
+    color: #D35564;
+}
+
+.borderDiv:nth-child(2) {
+    margin-top: 10px;
+}
+
+.logistics .logisticsDataDiv {
+    margin-top: 50px;
+}
+
+#logisticsData .speed-title {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#logisticsData .speed-title span {
+    font-size: 18px;
+}
+
+#logisticsData .speed-content .speed-line {
+    width: 57%;
+}
+
+#logisticsData .speed-content span:nth-child(1) {
+    width: 14%;
+}
+
+#logisticsData .speed-content {
+    margin-top: -15px;
+}
+
+.red {
+    color: #D35564;
+}
+
+#logisticsData .speed-title .dot {
+    display: none;
+}
+
+.logisticsDataDiv {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* 扶贫 */
+
+.povertyCol {
+    height: 262px;
+    background: #303741;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.povertyCol .iconCharts {
+    width: 100%;
+    margin-top: -5%;
+    height: 98%;
+}
+
+.povertyCol .textContainer,
+.hotSaleContainer div.GMVChart .textContainer {
+    padding: 20px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.povertyCol .textContainer {
+    padding-bottom: 0;
+}
+
+.internetConsume .col-lg-5 .textContainer,
+.internetConsume .col-lg-7 .textContainer {
+    text-align: center;
+    font-size: 12px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: #CFC521;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-xs-1,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9 {
+    padding-left: 10px;
+    padding-right: 10px;
+}

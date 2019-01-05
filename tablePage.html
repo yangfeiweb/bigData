@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>大数据平台列表数据</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/elementUi.css">
+    <link rel="stylesheet" href="css/tablePage.css">
+</head>
+
+<body>
+    <div class="tablePage">
+        <div class="nav-top">
+            <span class="nav-top-title">南乐县电商大数据</span>
+        </div>
+        <div id="app">
+            <!-- 搜索条件 -->
+            <div class="searchCondition">
+                <!-- 开始时间 -->
+                <!-- 结束时间 -->
+                <div class="searchLeft">
+                    <div class="timeDiv">
+                       时间： <el-date-picker v-model="searchData.time" @change='timeChange' type="daterange" range-separator="至" start-placeholder="开始日期" end-placeholder="结束日期" format="yyyy 年 MM 月 dd 日" value-format="timestamp">
+                        </el-date-picker>
+                    </div>
+                    <div class="sort">
+                       类别： <el-select v-model="searchData.sort" @change='getSort' placeholder="类别">
+                            <el-option v-for="item in sortList" :key="item.value" :label="item.label" :value="item.value">
+                            </el-option>
+                        </el-select>
+                    </div>
+                </div>
+                
+                <!-- 类别 -->
+                <!-- 店铺名称 -->
+                <div class="searchRight">
+                    <el-input placeholder="请输入店铺名称" @change='getShopName' prefix-icon="el-icon-search" v-model="searchData.shopName">
+                    </el-input>
+                </div>
+            </div>
+            <!-- 表格 -->
+            <div class="tableContainer">
+                <el-table :data="listData"  :highlight-current-row="false" style="width: 100%">
+                    <el-table-column prop="shopName" label="店铺名称">
+                    </el-table-column>
+                    <el-table-column prop="product" label="主营产品">
+                    </el-table-column>
+                    <el-table-column prop="GMA" label="年交易额(万元)">
+                    </el-table-column>
+                    <el-table-column prop="evaluate" label="综合评价">
+                    </el-table-column>
+                </el-table>
+                <el-pagination layout="prev, pager, next" :total="1000">
+                </el-pagination>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/vue.js"></script>
+<script src="js/elementUi.js"></script>
+<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script>
+    $(function() {
+
+    })
+</script>
+<script>
+    new Vue({
+        el: '#app',
+        data: function () {
+            return { 
+                visible:false,
+                searchData:{
+                    time:'',
+                    sort:'',
+                    shopName:''
+                },
+                listData:[
+                    {
+                        shopName: '西寺庄电商服务站',
+                        product: '农特产品',
+                        GMA: '1000.56',
+                        evaluate:"89"
+                    },
+                    {
+                        shopName: '西寺庄电商服务站',
+                        product: '农特产品',
+                        GMA: '1000.56',
+                        evaluate: "89"
+                    },
+                    {
+                        shopName: '西寺庄电商服务站',
+                        product: '农特产品',
+                        GMA: '1000.56',
+                        evaluate: "89"
+                    },
+                    {
+                        shopName: '西寺庄电商服务站',
+                        product: '农特产品',
+                        GMA: '1000.56',
+                        evaluate: "89"
+                    },
+                    {
+                        shopName: '西寺庄电商服务站',
+                        product: '农特产品',
+                        GMA: '1000.56',
+                        evaluate: "89"
+                    },
+                    {
+                        shopName: '西寺庄电商服务站',
+                        product: '农特产品',
+                        GMA: '1000.56',
+                        evaluate: "89"
+                    },
+                     {
+                        shopName: '西寺庄电商服务站',
+                        product: '农特产品',
+                        GMA: '1000.56',
+                        evaluate: "89"
+                    },
+                    {
+                        shopName: '西寺庄电商服务站',
+                        product: '农特产品',
+                        GMA: '1000.56',
+                        evaluate: "89"
+                    },
+                    {
+                        shopName: '西寺庄电商服务站',
+                        product: '农特产品',
+                        GMA: '1000.56',
+                        evaluate: "89"
+                    },
+                    {
+                        shopName: '西寺庄电商服务站',
+                        product: '农特产品',
+                        GMA: '1000.56',
+                        evaluate: "89"
+                    },
+                    {
+                        shopName: '西寺庄电商服务站',
+                        product: '农特产品',
+                        GMA: '1000.56',
+                        evaluate: "89"
+                    },
+                    {
+                        shopName: '西寺庄电商服务站',
+                        product: '农特产品',
+                        GMA: '1000.56',
+                        evaluate: "89"
+                    },
+                ],
+                time:"",
+                sortList:[
+                    {
+                        value: '1',
+                        label: '类别1'
+                    }, {
+                        value: '2',
+                        label: '类别2'
+                    }, {
+                        value: '3',
+                        label: '类别3'
+                    }
+                ]
+            }
+        },
+        watch: {
+            
+        },
+        methods: {
+            timeChange(val){
+                console.log(val)
+            },
+            getShopName(val){
+                console.log('店铺名称',this.searchData.shopName)
+            },
+            getSort(val){
+                console.log('类别',val)  
+            }
+        },
+    })
+</script>
+</html>
